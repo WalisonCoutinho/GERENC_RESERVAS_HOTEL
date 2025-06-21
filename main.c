@@ -17,7 +17,10 @@ int main() {
         printf("0. Sair\n");
 
         printf("Escolha uma opcao: ");
-        scanf("%d", &opcao);
+        if (scanf("%d", &opcao) != 1) {
+            printf("Entrada invalida. Encerrando o programa.\n");
+            break;
+        }
 
         switch (opcao) {
             case 1:
@@ -38,6 +41,7 @@ int main() {
             default:
                 printf("Opcao invalida. Tentar novamente.\n");
         }
+
     } while (opcao != 0);
 
     return 0;
