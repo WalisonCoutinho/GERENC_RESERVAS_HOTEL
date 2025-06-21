@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "funcoes.h"
+#include "../include/funcoes.h"
 
 //duas pessoas podem fazer a reserva em um mesmo quarto, porém não podem fazer checkin em um mesmo
 //concertar a questão do reservas.ocupado

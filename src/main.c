@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "funcoes.h"
+#include "../include/funcoes.h"
 
 int main() {
     // Exemplo de utilização

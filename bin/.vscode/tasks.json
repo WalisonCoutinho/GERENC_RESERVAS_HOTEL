@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar Hotel",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+          "-Wall",
+          "-Wextra",
+          "-g3",
+          "src/main.c",
+          "src/funcoes.c",
+          "-Iinclude",
+          "-o",
+          "bin/main.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Compila main.c e funcoes.c com suporte ao header"
+    }
+  ]
+}
+
+
