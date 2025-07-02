@@ -10,7 +10,7 @@ int main() {
     int opcao;
     do {
         printf("\nBEM-VINDO AO HOTEL ORIENTE:\n");
-        printf("Escolha uma opção:\n");
+        
         printf("1. Fazer Reserva\n");
         printf("2. Realizar Check-In\n");
         printf("3. Realizar Check-Out\n");
