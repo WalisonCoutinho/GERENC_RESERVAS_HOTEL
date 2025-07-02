@@ -2,27 +2,46 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Compilar Hotel",
+      "label": "Compilar GERENC_RESERVAS_HOTEL",
       "type": "shell",
       "command": "gcc",
       "args": [
-          "-Wall",
-          "-Wextra",
-          "-g3",
-          "src/main.c",
-          "src/funcoes.c",
-          "-Iinclude",
-          "-o",
-          "bin/main.exe"
+        "src/main.c",
+        "src/funcoes.c",
+        "-Iinclude",
+        "-o",
+        "bin/main.exe"
       ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "problemMatcher": ["$gcc"],
-      "detail": "Compila main.c e funcoes.c com suporte ao header"
+      "detail": "Compila o projeto GERENC_RESERVAS_HOTEL"
+    },
+    {
+      "label": "Executar GERENC_RESERVAS_HOTEL",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "bin\\main.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      }
     }
   ]
 }
+
 
 
